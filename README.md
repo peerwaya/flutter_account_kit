@@ -5,7 +5,7 @@ A Flutter plugin for allowing users to authenticate with the native Android &amp
 
 ## How do I use it?
 
-For complete API documentation, just see the [source code](https://github.com/peerwaya/flutter-account-kit/blob/master/lib/src/account_kit_theme.dart).
+For complete API documentation, just see the [source code](https://github.com/peerwaya/flutter-account-kit/blob/master/lib/src/account_kit.dart).
 
 ```dart
 import 'package:flutter_account_kit/flutter_account_kit.dart';
