@@ -41,8 +41,8 @@ class LoginResult {
       : status = _parseStatus(map['status']),
         accessToken = map['accessToken'] != null
             ? new AccessToken.fromMap(
-          map['accessToken'].cast<String, dynamic>(),
-        )
+                map['accessToken'].cast<String, dynamic>(),
+              )
             : null,
         code = map['code'],
         errorMessage = map['errorMessage'];

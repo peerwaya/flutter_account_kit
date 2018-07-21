@@ -1,4 +1,3 @@
-
 /// The status after a Facebook login flow has completed.
 enum LoginStatus {
   /// The login was successful and the user is now logged in.

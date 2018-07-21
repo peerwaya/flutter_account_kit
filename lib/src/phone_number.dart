@@ -1,4 +1,3 @@
-
 /// Describes the phone number associated with the [Account]
 class PhoneNumber {
   /// The countryCode associated with this phone number
@@ -7,7 +6,7 @@ class PhoneNumber {
   /// The national number associated with this phone number.
   final String number;
 
-  const PhoneNumber({ this.countryCode, this.number});
+  const PhoneNumber({this.countryCode, this.number});
 
   /// Constructs a new phone number instance from a [Map].
   ///
@@ -31,10 +30,10 @@ class PhoneNumber {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is PhoneNumber &&
-              runtimeType == other.runtimeType &&
-              countryCode == other.countryCode &&
-              number == other.number;
+      other is PhoneNumber &&
+          runtimeType == other.runtimeType &&
+          countryCode == other.countryCode &&
+          number == other.number;
 
   @override
   int get hashCode => countryCode.hashCode ^ number.hashCode;

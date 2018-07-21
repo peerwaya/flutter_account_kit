@@ -21,8 +21,8 @@ class Account {
       : accountId = map['accountId'],
         phoneNumber = map['phoneNumber'] != null
             ? new PhoneNumber.fromMap(
-          map['phoneNumber'].cast<String, dynamic>(),
-        )
+                map['phoneNumber'].cast<String, dynamic>(),
+              )
             : null,
         email = map['email'];
 
@@ -41,10 +41,10 @@ class Account {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is Account &&
-              runtimeType == other.runtimeType &&
-              phoneNumber == other.phoneNumber &&
-              accountId == other.accountId;
+      other is Account &&
+          runtimeType == other.runtimeType &&
+          phoneNumber == other.phoneNumber &&
+          accountId == other.accountId;
 
   @override
   int get hashCode =>

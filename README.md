@@ -1,8 +1,5 @@
 
 # flutter_account_kit
-[![pub package](https://img.shields.io/pub/v/flutter-account-kit.svg)](https://pub.dartlang.org/packages/flutter-account-kit)
- [![Build Status](https://travis-ci.org/peerwaya/flutter_facebook_login.svg?branch=master)](https://travis-ci.org/peerwaya/flutter-account-kit) 
- [![Coverage Status](https://coveralls.io/repos/github/peerwaya/flutter-account-kit/badge.svg)](https://coveralls.io/github/peerwaya/flutter-account-kit)
 
 A Flutter plugin for allowing users to authenticate with the native Android &amp; iOS AccountKit SDKs
 

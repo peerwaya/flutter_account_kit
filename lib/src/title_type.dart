@@ -6,5 +6,4 @@ enum TitleType {
 
   /// Usea localized translation of "Login" as the title
   login
-
 }
