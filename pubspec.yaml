@@ -1,8 +1,8 @@
 name: flutter_account_kit
-description: A new flutter plugin project.
+description: A Flutter plugin for allowing users to authenticate with the native Android &amp; iOS AccountKit SDKs
 version: 0.5.0
-author: Onyemaechi Okafor
-homepage:
+author: Onyemaechi Okafor <peerwaya@yahoo.com>
+homepage: https://github.com/peerwaya/flutter-account-kit
 
 dependencies:
   flutter:
