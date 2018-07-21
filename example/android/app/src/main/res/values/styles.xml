@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             Flutter draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.AccountKit.Outline">
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="com_accountkit_primary_color">@color/primary</item>
+        <item name="com_accountkit_primary_text_color">@android:color/white</item>
+        <item name="com_accountkit_secondary_text_color">#44566b</item>
+        <item name="com_accountkit_status_bar_color">@color/primaryDark</item>
+
+        <item name="com_accountkit_background">@android:color/white</item>
+        <item name="com_accountkit_background_color">@android:color/white</item>
+        <item name="com_accountkit_input_accent_color">@color/secondary</item>
+        <item name="com_accountkit_input_background_color">#00000000</item>
+        <item name="com_accountkit_input_border_color">@color/secondary</item>
+
+        <item name="com_accountkit_button_background_color">@color/primary</item>
+        <item name="com_accountkit_button_border_color">@color/primary</item>
+        <item name="com_accountkit_button_text_color">@android:color/white</item>
+    </style>
+</resources>

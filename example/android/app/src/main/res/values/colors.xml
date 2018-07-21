@@ -1,0 +1,24 @@
+<resources>
+    <color name="primary">#00A5FF</color>
+    <color name="primaryDark">#0084CC</color>
+    <color name="secondary">#0091e0</color>
+    <color name="accent">#00A5FF</color>
+    <color name="colorPrimary">#00a5ff</color>
+    <color name="red">#ff5d76</color>
+    <color name="green">#50e3c2</color>
+    <color name="yellow">#f5a623</color>
+    <color name ="text_color">#ffffff</color>
+    <color name="primaryColor">#50d2c2</color>
+    <color name="primaryLightColor">#caf5f2</color>
+    <color name="primaryDarkColor">#00a092</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="dark_text">#333333</color>
+    <color name="light_text">#B3B3B3</color>
+    <color name="input_accent">#FFFFFF</color>
+    <color name="input_text">#434343</color>
+    <color name="pressed_button">#FFEBAF</color>
+    <color name="disabled_button">#b5b5b5</color>
+    <color name="disabled_text">#979797</color>
+    <color name="button_text">#333333</color>
+    <color name="status_bar">#757575</color>
+</resources>
