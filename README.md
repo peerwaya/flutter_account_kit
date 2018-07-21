@@ -5,7 +5,7 @@ A Flutter plugin for allowing users to authenticate with the native Android &amp
 
 ## How do I use it?
 
-For complete API documentation, just see the [source code](https://github.com/peerwaya/flutter_account_kit/blob/master/lib/src/account_kit_theme.dart).
+For complete API documentation, just see the [source code](https://github.com/peerwaya/flutter-account-kit/blob/master/lib/src/account_kit_theme.dart).
 
 ```dart
 import 'package:flutter_account_kit/flutter_account_kit.dart';
@@ -30,19 +30,17 @@ switch (result.status) {
 ## Installation
 
 To get things up and running, you'll have to declare a pubspec dependency in your Flutter project.
-Also some minimal Android & iOS specific configuration must be done, otherise your app will crash.
+Also some minimal Android & iOS specific configuration must be done, otherwise your app will crash.
 
 ### On your Flutter project
 
-See the [installation instructions on pub](https://pub.dartlang.org/packages/flutter_facebook_login#-installing-tab-).
+See the [installation instructions on pub](https://pub.dartlang.org/packages/flutter_account_kit#-installing-tab-).
 
 #### Configuration
+Find out your _Facebook App ID_ and _AccountKit Client Token_ from Facebook App's dashboard in the Facebook developer console.
 <details>
     <summary>Android</summary>
     <br/>
-    
-    Find out your _Facebook App ID_ and _AccountKit Client Token_ from Facebook App's dashboard in the Facebook developer console.
-
 1.  In **\<your project root\>/android/app/src/main/res/values/strings.xml**
 
 ```xml
@@ -132,7 +130,7 @@ Done!
 ## Themes
 
 <details>
-    <summary>IOS</summary>
+    <summary>iOS</summary>
 <br/>
 
 ```dart
