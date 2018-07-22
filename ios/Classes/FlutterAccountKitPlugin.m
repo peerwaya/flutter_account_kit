@@ -14,7 +14,7 @@
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar> *)registrar {
     FlutterMethodChannel *channel = [FlutterMethodChannel
-                                     methodChannelWithName:@"com.peerwaya/flutter_accountkit"
+                                     methodChannelWithName:@"com.peerwaya/flutter_account_kit"
                                      binaryMessenger:[registrar messenger]];
     FlutterAccountKitPlugin *instance = [[FlutterAccountKitPlugin alloc] init];
     [registrar addApplicationDelegate:instance];
