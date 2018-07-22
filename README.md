@@ -1,6 +1,8 @@
 
 # flutter_account_kit
-
+[![pub package](https://img.shields.io/pub/v/flutter_account_kit.svg)](https://pub.dartlang.org/packages/flutter_account_kit)
+ [![Build Status](https://travis-ci.org/peerwaya/flutter-account-kit.svg?branch=master)](https://travis-ci.org/peerwaya/flutter-account-kit) 
+[![Coverage Status](https://coveralls.io/repos/github/peerwaya/flutter-account-kit/badge.svg?branch=master)](https://coveralls.io/github/peerwaya/flutter-account-kit?branch=master)
 A Flutter plugin for allowing users to authenticate with the native Android &amp; iOS AccountKit SDKs
 
 ## How do I use it?

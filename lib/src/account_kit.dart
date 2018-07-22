@@ -40,7 +40,7 @@ import 'package:flutter_account_kit/src/login_type.dart';
 /// and iOS clients. See the README for detailed instructions.
 class FlutterAccountKit {
   static const MethodChannel channel =
-      const MethodChannel('com.peerwaya/flutter_accountkit');
+      const MethodChannel('com.peerwaya/flutter_account_kit');
 
   /// The default configuration map
   ///
