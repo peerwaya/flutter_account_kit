@@ -20,3 +20,6 @@ flutter:
   plugin:
     androidPackage: com.peerwaya.flutteraccountkit
     pluginClass: FlutterAccountKitPlugin
+
+environment:
+  sdk: '>=1.24.3 <3.0.0'
