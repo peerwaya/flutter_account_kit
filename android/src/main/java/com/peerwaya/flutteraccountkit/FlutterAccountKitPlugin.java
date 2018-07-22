@@ -29,7 +29,7 @@ import com.facebook.accountkit.ui.LoginType;
 
 /** FlutterAccountKitPlugin */
 public class FlutterAccountKitPlugin implements MethodCallHandler {
-  public static final String CHANNEL_NAME = "com.peerwaya/flutter_accountkit";
+  public static final String CHANNEL_NAME = "com.peerwaya/flutter_account_kit";
   private static final String METHOD_LOG_IN = "login";
   private static final String METHOD_LOG_OUT = "logOut";
   private static final String METHOD_GET_CURRENT_ACCESS_TOKEN = "getCurrentAccessToken";
