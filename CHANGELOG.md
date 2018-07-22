@@ -1,3 +1,6 @@
+## 0.5.1
+
+* Rename method channel
 
 ## 0.5.1
 
