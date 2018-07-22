@@ -7,7 +7,7 @@ import 'custom_matchers.dart';
 void main() {
   group("FlutterAccountKit", () {
     const MethodChannel channel = const MethodChannel(
-      'com.peerwaya/flutter_accountkit',
+      'com.peerwaya/flutter_account_kit',
     );
     const countryCode = '234';
     const number = '8090000000';
@@ -118,8 +118,6 @@ void main() {
       final Map<String, dynamic> map = kTheme.toMap();
       expect(
         map,
-        // Just copy-pasting the kAccessToken here. This is just in case;
-        // we could accidentally make this test non-deterministic.
         {
           'backgroundColor': {'r': 1, 'g': 1, 'b': 1, 'a': 1},
           'buttonBackgroundColor': {'r': 0, 'g': 0, 'b': 0, 'a': 1},
