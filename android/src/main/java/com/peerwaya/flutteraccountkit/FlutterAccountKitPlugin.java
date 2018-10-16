@@ -8,6 +8,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -186,8 +187,8 @@ public class FlutterAccountKitPlugin implements MethodCallHandler {
         configurationBuilder.setInitialEmail(initialEmail);
       }
 
-      String initialPhoneCountryPrefix = (String) this.options.get("initialPhoneCountryPrefix");
-      String initialPhoneNumber = (String) this.options.get("initialPhoneNumber");
+      String initialPhoneCountryPrefix = (String) ((HashMap) this.options.get("initialPhoneNumber")).get("countryCode");
+      String initialPhoneNumber = (String) ((HashMap) this.options.get("initialPhoneNumber")).get("number");
 
       PhoneNumber phoneNumber = new PhoneNumber(initialPhoneCountryPrefix, initialPhoneNumber, null);
       configurationBuilder.setInitialPhoneNumber(phoneNumber);
