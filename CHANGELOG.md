@@ -1,3 +1,6 @@
+## 0.5.3
+
+* Fixed issue with initial phone number config
 ## 0.5.2
 
 * Rename method channel

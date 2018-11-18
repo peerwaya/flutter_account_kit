@@ -186,11 +186,11 @@ public class FlutterAccountKitPlugin implements MethodCallHandler {
         configurationBuilder.setInitialEmail(initialEmail);
       }
 
-      String initialPhoneCountryPrefix = (String) this.options.get("initialPhoneCountryPrefix");
-      String initialPhoneNumber = (String) this.options.get("initialPhoneNumber");
-
-      PhoneNumber phoneNumber = new PhoneNumber(initialPhoneCountryPrefix, initialPhoneNumber, null);
-      configurationBuilder.setInitialPhoneNumber(phoneNumber);
+      if (this.options.containsKey("initialPhoneNumber")) {
+        Map<String, String> phoneNumberMap = (Map<String, String>)this.options.get("initialPhoneNumber");
+        PhoneNumber phoneNumber = new PhoneNumber(phoneNumberMap.get("countryCode"), phoneNumberMap.get("number"), null);
+        configurationBuilder.setInitialPhoneNumber(phoneNumber);
+      }
 
       configurationBuilder.setFacebookNotificationsEnabled(
               (Boolean) this.options.get("facebookNotificationsEnabled"));
