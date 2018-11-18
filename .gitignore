@@ -8,4 +8,4 @@ build/
 ios/.generated/
 packages
 pubspec.lock
-.coveralls.yml
+.coveralls.ymlgit

@@ -57,10 +57,6 @@ class FlutterAccountKit {
     throw new StateError('Invalid accountkit type.');
   }
 
-  FlutterAccountKit() {
-    configure(defaultConfig);
-  }
-
   /// Enables the client access token flow
   ///
   /// Set to [ResponseType.token] if the Enable Client Access Token Flow switch in your app's dashboard is ON

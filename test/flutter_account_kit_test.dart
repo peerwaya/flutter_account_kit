@@ -161,13 +161,6 @@ void main() {
       );
     });
 
-    test('configure - default options', () async {
-      setMethodCallResponse(null);
-      await Future.delayed(const Duration(milliseconds: 500), () {
-        expect(log, [isConfiguredWithDefaultOptions()]);
-      });
-    });
-
     test('configure - with valid options', () async {
       setMethodCallResponse(null);
       await akt.configure(kValidConfig);
@@ -214,7 +207,6 @@ void main() {
       final config = Config()..countryBlacklist = [];
       await akt.configure(config);
       expect(log, [
-        isConfiguredWithDefaultOptions(),
         isMethodCall(
           'configure',
           arguments: {
@@ -229,7 +221,6 @@ void main() {
       final config = Config()..countryWhitelist = [];
       await akt.configure(config);
       expect(log, [
-        isConfiguredWithDefaultOptions(),
         isMethodCall(
           'configure',
           arguments: {
@@ -286,7 +277,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isMethodCall(
             'login',
             arguments: {
@@ -313,7 +303,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isConfiguredWithResponseType(ResponseType.token),
           isConfiguredWithResponseType(ResponseType.code),
         ],
@@ -330,7 +319,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isConfiguredWithTitleType(TitleType.login),
           isConfiguredWithTitleType(TitleType.appName),
         ],
@@ -347,7 +335,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isMethodCall(
             'login',
             arguments: {
@@ -389,7 +376,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isMethodCall(
             'login',
             arguments: {
@@ -431,7 +417,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isConfiguredWithResponseType(ResponseType.code),
           isMethodCall(
             'login',
@@ -480,7 +465,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isConfiguredWithResponseType(ResponseType.code),
           isMethodCall(
             'login',
@@ -522,7 +506,6 @@ void main() {
       expect(
         log,
         [
-          isConfiguredWithDefaultOptions(),
           isMethodCall(
             'logOut',
             arguments: null,
