@@ -141,22 +141,22 @@ import 'package:flutter_account_kit/flutter_account_kit.dart';
 
 final theme = AccountKitTheme(
     // Background
-    backgroundColor: Color.fromARGB(0.1, 0, 120, 0,),
+    backgroundColor: Color.fromARGB(255, 0, 120, 0,),
     backgroundImage: 'background.png',
     // Button
-    buttonBackgroundColor: Color.fromARGB(1.0, 0, 153, 0),
-    buttonBorderColor: Color.fromARGB(1, 0, 255, 0),
-    buttonTextColor: Color.fromARGB(1, 0, 255, 0),
+    buttonBackgroundColor: Color.fromARGB(255, 0, 153, 0),
+    buttonBorderColor: Color.fromARGB(255, 0, 255, 0),
+    buttonTextColor: Color.fromARGB(255, 0, 255, 0),
     // Button disabled
-    buttonDisabledBackgroundColor: Color.fromARGB(0.5, 100, 153, 0),
-    buttonDisabledBorderColor: Color.fromARGB(0.5, 100, 153, 0),
-    buttonDisabledTextColor: Color.fromARGB(0.5, 100, 153, 0),
+    buttonDisabledBackgroundColor: Color.fromARGB(255, 100, 153, 0),
+    buttonDisabledBorderColor: Color.fromARGB(255, 100, 153, 0),
+    buttonDisabledTextColor: Color.fromARGB(255, 100, 153, 0),
     // Header
-    headerBackgroundColor: Color.fromARGB( 1.0, 0, 153, 0),
-    headerButtonTextColor: Color.fromARGB(0.5, 0, 153, 0),
-    headerTextColor: Color.fromARGB(1, 0, 255, 0),
+    headerBackgroundColor: Color.fromARGB(255, 0, 153, 0),
+    headerButtonTextColor: Color.fromARGB(255, 0, 153, 0),
+    headerTextColor: Color.fromARGB(255, 0, 255, 0),
     // Input
-    inputBackgroundColor: Color.fromARGB(1, 0, 255, 0),
+    inputBackgroundColor: Color.fromARGB(255, 0, 255, 0),
     inputBorderColor: Color.hex('#ccc'),
     inputTextColor: Color(0xFFb74093),
     // Others

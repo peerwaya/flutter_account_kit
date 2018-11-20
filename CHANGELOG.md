@@ -1,3 +1,7 @@
+## 0.6.0
+* Added button text color to accountkit theme
+* Fix issue with color mapping
+
 ## 0.5.4
 
 * Test fixes
