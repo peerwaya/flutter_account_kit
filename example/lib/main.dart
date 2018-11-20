@@ -28,7 +28,10 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       final theme = AccountKitTheme(
-          headerBackgroundColor: Colors.green, backgroundColor: Colors.blue);
+          headerBackgroundColor: Colors.green,
+          buttonBackgroundColor: Colors.yellow,
+          buttonBorderColor: Colors.yellow,
+          buttonTextColor: Colors.black87);
       await akt.configure(Config()
         ..facebookNotificationsEnabled = true
         ..receiveSMS = true
