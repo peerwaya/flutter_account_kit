@@ -8,10 +8,10 @@ class AccountKitTheme {
       return null;
     }
     return <String, double>{
-      'r': color.red / 255,
-      'g': color.green / 255,
-      'b': color.green / 255,
-      'a': color.alpha / 1.0
+      'r': color.red / 0xFF,
+      'g': color.green / 0xFF,
+      'b': color.blue / 0xFF,
+      'a': color.alpha / 0xFF
     };
   }
 
@@ -38,6 +38,7 @@ class AccountKitTheme {
       this.headerButtonTextColor,
       this.buttonBackgroundColor,
       this.buttonBorderColor,
+      this.buttonTextColor,
       this.buttonDisabledBackgroundColor,
       this.buttonDisabledBorderColor,
       this.buttonDisabledTextColor,
@@ -71,6 +72,9 @@ class AccountKitTheme {
 
   /// Color for the borders of buttons
   Color buttonBorderColor;
+
+  /// Color for the buttonText
+  Color buttonTextColor;
 
   /// Color for the disabled background color
   Color buttonDisabledBackgroundColor;
@@ -111,6 +115,7 @@ class AccountKitTheme {
       'headerTextColor': colorToMap(headerTextColor),
       'headerButtonTextColor': colorToMap(headerButtonTextColor),
       'buttonBackgroundColor': colorToMap(buttonBackgroundColor),
+      'buttonTextColor': colorToMap(buttonTextColor),
       'buttonBorderColor': colorToMap(buttonBorderColor),
       'buttonDisabledBackgroundColor':
           colorToMap(buttonDisabledBackgroundColor),
