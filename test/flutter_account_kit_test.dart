@@ -52,6 +52,7 @@ void main() {
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       buttonBackgroundColor: Color.fromARGB(255, 0, 0, 0),
       buttonTextColor: Color.fromARGB(255, 255, 255, 255),
+      inputTextColor: Color.fromARGB(255, 255, 255, 255),
       statusBarStyle: StatusBarStyle.lightStyle,
     );
 
@@ -75,6 +76,7 @@ void main() {
         'backgroundColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
         'buttonBackgroundColor': {'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0},
         'buttonTextColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
+        'inputTextColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
         'statusBarStyle': 1
       },
     };
@@ -124,6 +126,7 @@ void main() {
           'backgroundColor': {'r': 1, 'g': 1, 'b': 1, 'a': 1},
           'buttonBackgroundColor': {'r': 0, 'g': 0, 'b': 0, 'a': 1},
           'buttonTextColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
+          'inputTextColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
           'statusBarStyle': 1
         },
       );

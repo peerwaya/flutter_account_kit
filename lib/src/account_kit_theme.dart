@@ -45,6 +45,7 @@ class AccountKitTheme {
       this.iconColor,
       this.inputBackgroundColor,
       this.inputBorderColor,
+      this.inputTextColor,
       this.textColor,
       this.statusBarStyle,
       this.titleColor});
