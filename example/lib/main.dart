@@ -37,6 +37,7 @@ class _MyAppState extends State<MyApp> {
         ..receiveSMS = true
         ..readPhoneStateEnabled = true
         ..theme = theme
+        ..initialPhoneNumber = PhoneNumber(countryCode: '234', number: '0800000000')
         ..defaultCountry = "NG");
       initialized = true;
     } on PlatformException {

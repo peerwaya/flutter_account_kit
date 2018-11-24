@@ -192,8 +192,8 @@ class Config {
       'responseType': _responseTypeAsString(),
       'titleType': _titleTypeAsString(),
       'initialEmail': initialEmail,
-      'initialPhoneNumber':
-          initialPhoneNumber != null ? initialPhoneNumber.toMap() : null,
+      'initialPhoneCountryPrefix': initialPhoneNumber != null ? initialPhoneNumber.countryCode : null,
+      'initialPhoneNumber': initialPhoneNumber != null ? initialPhoneNumber.number : null,
     };
     if (theme != null) {
       map['theme'] = theme.toMap();
