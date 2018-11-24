@@ -71,7 +71,8 @@ void main() {
       'defaultCountry': 'NG',
       'responseType': 'token',
       'titleType': 'login',
-      'initialPhoneNumber': {'countryCode': '234', 'number': '8090000000'},
+      'initialPhoneCountryPrefix': '234',
+      'initialPhoneNumber': '8090000000',
       'theme': {
         'backgroundColor': {'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0},
         'buttonBackgroundColor': {'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0},

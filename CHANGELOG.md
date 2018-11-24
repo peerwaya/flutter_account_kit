@@ -1,6 +1,9 @@
+## 0.6.2
+* Fix issue with initial phone number for android and ios
+
 ## 0.6.1
 * Added input text color to accountkit theme constructor
-s
+
 ## 0.6.0
 * Added button text color to accountkit theme
 * Fix issue with color mapping
