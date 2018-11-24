@@ -1,3 +1,6 @@
+## 0.6.3
+* Fix null issue with getCurrentAccount on ios
+
 ## 0.6.2
 * Fix issue with initial phone number for android and ios
 

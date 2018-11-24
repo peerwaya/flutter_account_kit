@@ -38,7 +38,7 @@
     } else if ([@"getCurrentAccessToken" isEqualToString:call.method]) {
         [self getCurrentAccessToken:result];
     } else if ([@"getCurrentAccount" isEqualToString:call.method]) {
-        [self getCurrentAccessToken:result];
+        [self getCurrentAccount:result];
     } else {
         result(FlutterMethodNotImplemented);
     }
@@ -108,7 +108,7 @@
 
 - (void)getCurrentAccount:(FlutterResult)result {
     __block bool callbackCalled = false;
-    [_accountKit requestAccount:^(id<AKFAccount> account, NSError *error) {
+    [[self getAccountKit] requestAccount:^(id<AKFAccount> account, NSError *error) {
         if (callbackCalled) {
             return;
         }
@@ -162,7 +162,7 @@
 
 - (void)logOut:(FlutterResult)result {
     @try {
-        [_accountKit logOut];
+        [[self getAccountKit] logOut];
         result(nil);
     }
     @catch (NSException * e) {
