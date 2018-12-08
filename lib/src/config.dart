@@ -162,7 +162,7 @@ class Config {
 
   set countryWhitelist(List<String> countryWhitelist) {
     assertValidityOfCountryCodes(countryWhitelist, 'countryWhitelist');
-    _countryWhitelist = countryBlacklist;
+    _countryWhitelist = countryWhitelist;
   }
 
   List<String> get countryWhitelist {
