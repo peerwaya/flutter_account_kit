@@ -24,7 +24,7 @@ public class LoginResults {
                 put("accessToken", accessTokenMap);
             }};
         } else {
-            final String code = loginResult.getAuthorizationCode().substring(0, 10);
+            final String code = loginResult.getAuthorizationCode();
             final String state = loginResult.getFinalAuthorizationState();
             return new HashMap<String, Object>() {{
                 put("status", "loggedIn");
