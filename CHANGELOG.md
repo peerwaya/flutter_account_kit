@@ -1,3 +1,6 @@
+## 0.6.4
+* Fix issue with country whitelisting
+* Fix authorization code truncation issue 
 ## 0.6.3
 * Fix null issue with getCurrentAccount on ios
 
