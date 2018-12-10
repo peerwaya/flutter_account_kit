@@ -1,3 +1,5 @@
+## 0.6.5
+* Add static framework for swift based projects
 ## 0.6.4
 * Fix issue with country whitelisting
 * Fix authorization code truncation issue 
