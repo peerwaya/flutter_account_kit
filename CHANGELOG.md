@@ -1,3 +1,5 @@
+## 0.6.6
+* Refactor for androidx
 ## 0.6.5
 * Add static framework for swift based projects
 ## 0.6.4
