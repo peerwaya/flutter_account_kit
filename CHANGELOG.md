@@ -1,3 +1,6 @@
+## 0.7.0
+* Update readme
+* Update dependencies to support whatsapp login
 ## 0.6.6
 * Refactor for androidx
 ## 0.6.5

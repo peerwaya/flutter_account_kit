@@ -213,15 +213,6 @@ public class FlutterAccountKitPlugin implements MethodCallHandler {
                 configurationBuilder.setReadPhoneStateEnabled(readPhoneStateEnabled);
             }
 
-            boolean receiveSMS = (Boolean) this.options.get("receiveSMS");
-            if (receiveSMS && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
-                    this.registrar.context(), Manifest.permission.RECEIVE_SMS)) {
-                Log.w(LOG_TAG, "To allow extracting code from SMS add RECEIVE_SMS permission in your app's manifest");
-                configurationBuilder.setReceiveSMS(false);
-            } else {
-                configurationBuilder.setReceiveSMS(receiveSMS);
-            }
-
             if (this.options.containsKey("countryBlacklist")) {
                 String[] blacklist = formatCountryList((List<String>) this.options.get("countryBlacklist"));
                 configurationBuilder.setSMSBlacklist(blacklist);

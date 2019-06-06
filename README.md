@@ -12,7 +12,7 @@ For complete API documentation, just see the [source code](https://github.com/pe
 ```dart
 import 'package:flutter_account_kit/flutter_account_kit.dart';
 
-AccountKit akt = new AccountKit();
+FlutterAccountKit akt = new FlutterAccountKit();
 LoginResult result = await akt.logInWithPhone();
 
 switch (result.status) {
@@ -166,7 +166,7 @@ final theme = AccountKitTheme(
     // Header
     statusBarStyle: StatusBarStyle.lightStyle, // or StatusBarStyle.defaultStyle
    );
-AccountKit akt = new AccountKit();
+FlutterAccountKit akt = new FlutterAccountKit();
 Config cfg = Config()
              ..theme = theme;
 akt.configure(cfg);
@@ -232,7 +232,7 @@ B. If you have enabled the **client access token flow in fb account kit dashboar
 // Configures the SDK with some options
 import 'package:flutter_account_kit/flutter_account_kit.dart';
 
-AccountKit akt = new AccountKit();
+FlutterAccountKit akt = new FlutterAccountKit();
 Config cfg = Config()
              ..responseType = ResponseType.code;
 akt.configure(cfg);

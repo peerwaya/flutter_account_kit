@@ -34,5 +34,5 @@ android {
 }
 
 dependencies {
-    api ('com.facebook.android:account-kit-sdk:4.+')
+    api ('com.facebook.android:account-kit-sdk:5.+')
 }
