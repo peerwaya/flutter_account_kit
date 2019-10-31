@@ -33,7 +33,7 @@ class LoginResultDelegate implements PluginRegistry.ActivityResultListener {
             AccountKitLoginResult loginResult = data.getParcelableExtra(AccountKitLoginResult.RESULT_KEY);
             if (loginResult.getError() != null) {
                 finishWithResult(LoginResults.error(loginResult.getError()));
-            } else if (loginResult.wasCancelled()) {
+            } else if (RESULT_OK != resultCode || loginResult.wasCancelled()) {
                 finishWithResult(LoginResults.cancelledByUser);
             } else {
                 finishWithResult(LoginResults.success(loginResult));
