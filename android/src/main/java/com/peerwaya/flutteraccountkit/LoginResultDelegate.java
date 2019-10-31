@@ -1,5 +1,6 @@
 package com.peerwaya.flutteraccountkit;
 
+import android.app.Activity;
 import android.content.Intent;
 
 import com.facebook.accountkit.AccountKitLoginResult;
@@ -30,7 +31,7 @@ class LoginResultDelegate implements PluginRegistry.ActivityResultListener {
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == FlutterAccountKitPlugin.APP_REQUEST_CODE) {
-            if (RESULT_OK != resultCode) {
+            if (Activity.RESULT_OK != resultCode) {
                 finishWithResult(LoginResults.cancelledByUser);
                 return true;
             }
